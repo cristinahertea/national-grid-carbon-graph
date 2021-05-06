@@ -1,0 +1,2 @@
+(this["webpackJsonpnational-grid-carbon-graph"]=this["webpackJsonpnational-grid-carbon-graph"]||[]).push([[0],{9:function(n,r,e){"use strict";e.r(r);e(0);var t=e(3),c=e(1),i=function(){return Object(c.jsx)("div",{children:"Init"})},a=document.querySelector("#here");Object(t.render)(Object(c.jsx)(i,{}),a)}},[[9,1,2]]]);
+//# sourceMappingURL=main.b83e7617.chunk.js.map

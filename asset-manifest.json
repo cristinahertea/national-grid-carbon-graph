@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.js": "/national-grid-carbon-graph/static/js/main.b83e7617.chunk.js",
-    "main.js.map": "/national-grid-carbon-graph/static/js/main.b83e7617.chunk.js.map",
+    "main.css": "/national-grid-carbon-graph/static/css/main.e840d97c.chunk.css",
+    "main.js": "/national-grid-carbon-graph/static/js/main.340de4ff.chunk.js",
+    "main.js.map": "/national-grid-carbon-graph/static/js/main.340de4ff.chunk.js.map",
     "runtime-main.js": "/national-grid-carbon-graph/static/js/runtime-main.9c5aadd7.js",
     "runtime-main.js.map": "/national-grid-carbon-graph/static/js/runtime-main.9c5aadd7.js.map",
-    "static/js/2.a25885e8.chunk.js": "/national-grid-carbon-graph/static/js/2.a25885e8.chunk.js",
-    "static/js/2.a25885e8.chunk.js.map": "/national-grid-carbon-graph/static/js/2.a25885e8.chunk.js.map",
+    "static/js/2.6e1e2ea7.chunk.js": "/national-grid-carbon-graph/static/js/2.6e1e2ea7.chunk.js",
+    "static/js/2.6e1e2ea7.chunk.js.map": "/national-grid-carbon-graph/static/js/2.6e1e2ea7.chunk.js.map",
     "index.html": "/national-grid-carbon-graph/index.html",
-    "static/js/2.a25885e8.chunk.js.LICENSE.txt": "/national-grid-carbon-graph/static/js/2.a25885e8.chunk.js.LICENSE.txt"
+    "static/css/main.e840d97c.chunk.css.map": "/national-grid-carbon-graph/static/css/main.e840d97c.chunk.css.map",
+    "static/js/2.6e1e2ea7.chunk.js.LICENSE.txt": "/national-grid-carbon-graph/static/js/2.6e1e2ea7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9c5aadd7.js",
-    "static/js/2.a25885e8.chunk.js",
-    "static/js/main.b83e7617.chunk.js"
+    "static/js/2.6e1e2ea7.chunk.js",
+    "static/css/main.e840d97c.chunk.css",
+    "static/js/main.340de4ff.chunk.js"
   ]
 }

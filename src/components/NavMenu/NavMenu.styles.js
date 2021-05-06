@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import * as colors from '../../constants/colors'
 
 export const Logo = styled.img`
   width: 90%;
@@ -6,16 +7,16 @@ export const Logo = styled.img`
 `
 
 export const Wrapper = styled.div`
-  background-color: #333;
+  background-color: ${colors.GREY};
   position: relative;
   display: grid;
-  grid-template-rows: min-content auto 50px;
+  grid-template-rows: min-content min-content auto 50px;
 `
 
 export const ButtonsList = styled.div`
-  border-top: 2px solid white;
+  border-top: 2px solid ${colors.WHITE};
   color: white;
-  padding: 40px 10px 10px 10px;
+  padding: 40px 10px;
 `
 
 export const Button = styled.div`
@@ -29,33 +30,32 @@ export const Button = styled.div`
   transition: 300ms;
   padding-right: 20px;
   background: ${({ selected }) =>
-    selected
-      ? 'linear-gradient(-145deg, orange 50%, transparent 80%)'
-      : 'transparent'};
-  color: white;
+    selected ? colors.BLUE_GRADIENT : colors.TRANSPARENT};
+  color: ${colors.WHITE};
+  user-select: none;
 
   &:hover {
     color: #333;
-    background: linear-gradient(-145deg, white 50%, transparent 80%);
+    background: ${colors.WHITE_GRADIENT};
   }
 `
 
 export const Copyright = styled.div`
   text-align: center;
   font-size: 18px;
-  color: white;
-  border-top: 2px solid white;
+  color: ${colors.WHITE};
+  border-top: 2px solid ${colors.WHITE};
   padding-top: 10px;
 `
 
 export const AuthorLink = styled.a`
-  color: white;
+  color: ${colors.WHITE};
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: underline;
   transition: 300ms;
 
   &:hover {
-    color: orange;
+    color: ${colors.BLUE};
   }
 `

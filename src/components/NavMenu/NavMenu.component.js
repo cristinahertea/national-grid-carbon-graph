@@ -1,13 +1,11 @@
 import React from 'react'
 import images from '../../constants/images'
+import { DatePicker } from '../DatePicker'
+
 import config from './NavMenu.config'
 import * as NS from './NavMenu.styles'
 
 export const NavMenu = ({ selected, setSelected }) => {
-  const handleClick = (id) => {
-    setSelected(id)
-  }
-
   return (
     <NS.Wrapper>
       <NS.Logo src={images.Logo} alt='logo' />
@@ -17,13 +15,14 @@ export const NavMenu = ({ selected, setSelected }) => {
             <NS.Button
               key={el.id}
               selected={selected === el.id}
-              onClick={() => handleClick(el.id)}
+              onClick={() => setSelected(el.id)}
             >
               {el.label}
             </NS.Button>
           )
         })}
       </NS.ButtonsList>
+      <DatePicker />
       <NS.Copyright>
         Built by{' '}
         <NS.AuthorLink

@@ -19,7 +19,7 @@ export const ButtonsList = styled.div`
   padding: 40px 10px;
 `
 
-export const Button = styled.div`
+export const NavButton = styled.div`
   margin-bottom: 5px;
   text-align: right;
   cursor: pointer;

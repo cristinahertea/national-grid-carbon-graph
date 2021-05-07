@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-
 import * as DS from './DatePicker.styles'
 
 export const DatePicker = ({ setDateRange }) => {
@@ -44,6 +43,7 @@ export const DatePicker = ({ setDateRange }) => {
         value={endDate}
         onChange={setEndDate}
         minDate={startDate}
+        maxDate={new Date()}
         format={'dd/MM/yyyy hh:mm a'}
         disableClock
       />

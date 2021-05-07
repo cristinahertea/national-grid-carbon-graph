@@ -9,3 +9,4 @@ export const WHITE_GRADIENT =
   'linear-gradient(-145deg, white 40%, transparent 70%)'
 export const BLUE_GRADIENT =
   'linear-gradient(-145deg, #006edc 40%, transparent 70%)'
+export const ALPHA_GREY = 'rgba(0, 0, 0, 0.6)'

@@ -1,25 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import images from '../../constants/images'
 import { DatePicker } from '../DatePicker'
-
 import config from './NavMenu.config'
 import * as NS from './NavMenu.styles'
 
-export const NavMenu = ({ selected, setSelected, setDateRange }) => {
+export const NavMenu = ({ setDateRange }) => {
+  const [selected, setSelected] = useState(1)
+
   const { authorName, menuItems, githubLink } = config
   return (
     <NS.Wrapper>
       <NS.Logo src={images.Logo} alt='logo' />
       <NS.ButtonsList>
         {menuItems.map((el) => {
+          const { id, label } = el
           return (
-            <NS.Button
-              key={el.id}
-              selected={selected === el.id}
-              onClick={() => setSelected(el.id)}
+            <NS.NavButton
+              key={id}
+              selected={selected === id}
+              onClick={() => setSelected(id)}
             >
-              {el.label}
-            </NS.Button>
+              {label}
+            </NS.NavButton>
           )
         })}
       </NS.ButtonsList>

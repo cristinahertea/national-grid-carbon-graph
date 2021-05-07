@@ -5,12 +5,13 @@ import { DatePicker } from '../DatePicker'
 import config from './NavMenu.config'
 import * as NS from './NavMenu.styles'
 
-export const NavMenu = ({ selected, setSelected }) => {
+export const NavMenu = ({ selected, setSelected, setDateRange }) => {
+  const { authorName, menuItems, githubLink } = config
   return (
     <NS.Wrapper>
       <NS.Logo src={images.Logo} alt='logo' />
       <NS.ButtonsList>
-        {config.map((el) => {
+        {menuItems.map((el) => {
           return (
             <NS.Button
               key={el.id}
@@ -22,14 +23,11 @@ export const NavMenu = ({ selected, setSelected }) => {
           )
         })}
       </NS.ButtonsList>
-      <DatePicker />
+      <DatePicker setDateRange={setDateRange} />
       <NS.Copyright>
         Built by{' '}
-        <NS.AuthorLink
-          href={'https://github.com/cristinahertea/national-grid-carbon-graph'}
-          target='_blank'
-        >
-          Cristina Hertea
+        <NS.AuthorLink href={githubLink} target='_blank'>
+          {authorName}
         </NS.AuthorLink>
       </NS.Copyright>
     </NS.Wrapper>

@@ -32,6 +32,22 @@ export const Label = styled.div`
 
 export const Wrapper = styled.div`
   height: min-content;
-  border-top: 2px solid ${colors.WHITE};
-  padding: 20px 10px;
+  border-top: 2px solid ${colors.LIGHT_GREY};
+  padding: 40px 10px;
+`
+
+export const FetchButton = styled.div`
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  color: ${colors.WHITE};
+  border: thin solid ${colors.LIGHT_GREY};
+  border-radius: 0px;
+  padding: 10px 0;
+  transition: 300ms;
+
+  &:hover {
+    color: ${colors.GREY};
+    background: ${colors.WHITE};
+  }
 `

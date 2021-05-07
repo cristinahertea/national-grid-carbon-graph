@@ -10,11 +10,11 @@ export const Wrapper = styled.div`
   background-color: ${colors.GREY};
   position: relative;
   display: grid;
-  grid-template-rows: min-content min-content auto 50px;
+  grid-template-rows: min-content min-content auto min-content;
 `
 
 export const ButtonsList = styled.div`
-  border-top: 2px solid ${colors.WHITE};
+  border-top: 2px solid ${colors.LIGHT_GREY};
   color: white;
   padding: 40px 10px;
 `
@@ -41,11 +41,11 @@ export const Button = styled.div`
 `
 
 export const Copyright = styled.div`
-  text-align: center;
+  text-align: right;
   font-size: 18px;
   color: ${colors.WHITE};
-  border-top: 2px solid ${colors.WHITE};
-  padding-top: 10px;
+  border-top: 2px solid ${colors.LIGHT_GREY};
+  padding: 10px 20px;
 `
 
 export const AuthorLink = styled.a`

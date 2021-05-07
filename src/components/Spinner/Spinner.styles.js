@@ -8,7 +8,7 @@ export const InnerCircle = styled.div`
   border-bottom: 20px solid ${colors.WHITE};
   border-top: 20px solid ${colors.WHITE};
   border-left: 20px solid ${colors.WHITE};
-  border-right: 20px solid ${colors.BLUE};
+  border-right: 20px dashed ${colors.BLUE};
   border-radius: 50%;
   animation-name: spin;
   animation-duration: 2000ms;

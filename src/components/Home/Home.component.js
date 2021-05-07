@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { NavMenu } from '../NavMenu'
 import { Content } from '../Content'
 
@@ -8,10 +8,6 @@ export const Home = () => {
   const [selected, setSelected] = useState(1)
   const [dateRange, setDateRange] = useState(null)
 
-  useEffect(() => {
-    console.log(dateRange)
-  }, [dateRange])
-
   return (
     <HS.Wrapper>
       <NavMenu
@@ -19,7 +15,7 @@ export const Home = () => {
         setSelected={setSelected}
         setDateRange={setDateRange}
       />
-      <Content selected={selected}></Content>
+      <Content selected={selected} dateRange={dateRange}></Content>
     </HS.Wrapper>
   )
 }

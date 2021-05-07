@@ -20,15 +20,15 @@ export const ButtonsList = styled.div`
 `
 
 export const Button = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: right;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   transition: 300ms;
-  padding-right: 20px;
+  padding: 5px 20px 5px 0;
   background: ${({ selected }) =>
     selected ? colors.BLUE_GRADIENT : colors.TRANSPARENT};
   color: ${colors.WHITE};

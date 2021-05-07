@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
   padding: 40px 10px;
 `
 
-export const FetchButton = styled.div`
+export const FetchButton = styled.button`
   cursor: pointer;
   width: 100%;
   text-align: center;
@@ -45,9 +45,22 @@ export const FetchButton = styled.div`
   border-radius: 0px;
   padding: 10px 0;
   transition: 300ms;
+  background: ${colors.LIGHT_GREY};
+  font-size: 16px;
 
   &:hover {
-    color: ${colors.GREY};
-    background: ${colors.WHITE};
+    background: ${colors.BLUE};
   }
+
+  &:disabled {
+    background: ${colors.LIGHT_GREY};
+    color: ${colors.GREY};
+  }
+`
+
+export const Error = styled.div`
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  color: ${colors.RED};
 `

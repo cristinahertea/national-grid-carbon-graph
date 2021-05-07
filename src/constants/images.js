@@ -1,3 +1,7 @@
 import Logo from '../assets/NationalGridLogo.png'
 
-export default { Logo }
+const images = {
+  Logo,
+}
+
+export default images

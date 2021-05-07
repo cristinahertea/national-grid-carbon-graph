@@ -14,7 +14,8 @@ export const Content = ({ dateRange }) => {
   const getData = async (url) => {
     const response = await getIntensityService(url)
     setIsLoading(false)
-    if (response.data) return setData(response.data)
+    if (response.data.length > 0) return setData(response.data)
+    if (response.data.length < 1) return setError('No data to display.')
     if (response.error) return setError(response.error)
     return setError('Woops! Something went wrong!')
   }
@@ -33,11 +34,7 @@ export const Content = ({ dateRange }) => {
     <CS.Wrapper>
       {isLoading && <Spinner />}
       {error && <CS.Error>{error}</CS.Error>}
-      {data.length > 0 ? (
-        <LineChart data={data} />
-      ) : (
-        <CS.Error>{'No data to display.'}</CS.Error>
-      )}
+      {data.length > 0 && <LineChart data={data} />}
     </CS.Wrapper>
   )
 }

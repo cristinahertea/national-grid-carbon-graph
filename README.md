@@ -1,3 +1,7 @@
+## Preview
+
+You can preview this app if you go to [Github Pages](https://cristinahertea.github.io/national-grid-carbon-graph/)
+
 ## Pre-requisites
 
 If you run the app for the first time, make sure you install all dependencies using:

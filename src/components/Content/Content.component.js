@@ -14,10 +14,13 @@ export const Content = ({ dateRange }) => {
   const getData = async (url) => {
     const response = await getIntensityService(url)
     setIsLoading(false)
-    if (response.data.length > 0) return setData(response.data)
-    if (response.data.length < 1) return setError('No data to display.')
-    if (response.error) return setError(response.error)
-    return setError('Woops! Something went wrong!')
+    try {
+      if (response.data.length > 0) return setData(response.data)
+      if (response.data.length < 1) return setError('No data to display.')
+      if (response.error) return setError(response.error)
+    } catch (e) {
+      return setError('Woops! Something went wrong!')
+    }
   }
 
   useEffect(() => {
